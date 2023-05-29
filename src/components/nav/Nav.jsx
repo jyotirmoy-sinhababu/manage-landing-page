@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 
 import './navStyle.css';
 
+import Logo from '../../sub-components/logo/Logo';
+
 const Nav = () => {
   const [isNotMobileView, setIsNotMobileView] = useState(true);
   return (
     <div>
-      <div></div>
+      <div>
+        <Logo />
+      </div>
       {isNotMobileView ? (
         <div>
           {' '}
@@ -19,7 +23,7 @@ const Nav = () => {
           <div></div>
         </div>
       ) : null}
-      <div>
+      <div className='nav-mobile-btn-cnt'>
         <button>hi</button>
       </div>
     </div>
