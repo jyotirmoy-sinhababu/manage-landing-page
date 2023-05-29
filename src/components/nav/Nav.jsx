@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './navStyle.css';
 
 import Logo from '../../sub-components/logo/Logo';
+import Btn from '../../sub-components/btn/Btn';
 
 const Nav = () => {
   const [isNotMobileView, setIsNotMobileView] = useState(true);
@@ -20,7 +21,9 @@ const Nav = () => {
             <button className='nav-btn'>Resources</button>
             <button className='nav-btn'>Resources</button>
           </div>
-          <div></div>
+          <div>
+            <Btn />
+          </div>
         </div>
       ) : null}
       <div className='nav-mobile-btn-cnt'>
