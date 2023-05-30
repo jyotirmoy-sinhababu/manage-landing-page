@@ -4,11 +4,13 @@ import Nav from '../../components/nav/Nav';
 import PageIntro from '../../components/introCnt/PageIntro';
 import PageCnt from '../../components/pageCnt/PageCnt';
 import Card from '../../components/card/Card';
+import Btn from '../../sub-components/btn/Btn';
 
 import ali from '../../assests/img/avatar-ali.png';
 import anisha from '../../assests/img/avatar-anisha.png';
 import richard from '../../assests/img/avatar-richard.png';
 import shanai from '../../assests/img/avatar-shanai.png';
+import Footer from '../../components/footer/Footer';
 
 const LandingPage = () => {
   return (
@@ -48,6 +50,10 @@ const LandingPage = () => {
             'Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.'
           }
         />
+        <div>
+          <Btn />
+        </div>
+        <Footer />
       </div>
     </>
   );
