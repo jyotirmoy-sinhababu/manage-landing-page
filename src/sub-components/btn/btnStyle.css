@@ -1,0 +1,10 @@
+.btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 70px;
+  color: aliceblue;
+  background-color: orange;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}

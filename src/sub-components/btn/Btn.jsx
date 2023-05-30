@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './btnStyle.css';
+
 const Btn = () => {
   return (
-    <div>
-      <button>Get Started</button>
+    <div className='btn-cnt'>
+      <button className='btn'>Get Started</button>
     </div>
   );
 };
