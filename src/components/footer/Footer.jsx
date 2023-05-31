@@ -5,10 +5,24 @@ import Logo from '../../sub-components/logo/Logo';
 const Footer = () => {
   const [email, setEmail] = useState();
 
+  const [submittedData, setSubmittedData] = useState();
+  const [err, setErr] = useState();
+
   const onChange = (e) => {
     setEmail(e.target.value);
   };
   console.log(email);
+
+  const handleSubmit = () => {
+    if (
+      !/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        email
+      )
+    ) {
+      setSubmittedData('Submitted!');
+    } else setErr('Please submit valid email address');
+  };
+
   return (
     <div>
       <div>
@@ -31,17 +45,24 @@ const Footer = () => {
         <button>Privacy Policy</button>
       </div>
       <div>
-        <form>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSubmit();
+          }}
+        >
           <input
             onChange={(e) => {
               onChange(e);
             }}
             className='input-field'
             type='email'
+            required
             placeholder='please enter your email'
           />
-          <button>Go</button>
+          <button type='submit'>Go</button>
         </form>
+        <div>{!submittedData ? <p>{submittedData}</p> : <p>{err}</p>}</div>
       </div>
     </div>
   );

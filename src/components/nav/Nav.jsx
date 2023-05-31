@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './navStyle.css';
+import { GoThreeBars } from 'react-icons/go';
 
 import Logo from '../../sub-components/logo/Logo';
 import Btn from '../../sub-components/btn/Btn';
@@ -8,12 +9,12 @@ import Btn from '../../sub-components/btn/Btn';
 const Nav = () => {
   const [isNotMobileView, setIsNotMobileView] = useState(true);
   return (
-    <div>
-      <div>
+    <div className='nav-cnt'>
+      <div className='nav-logo-cnt'>
         <Logo />
       </div>
       {isNotMobileView ? (
-        <div>
+        <div className='nav-main-btn-cnt'>
           {' '}
           <div className='nav-first-btn-cnt'>
             <button className='nav-btn'>Features</button>
@@ -25,9 +26,16 @@ const Nav = () => {
             <Btn />
           </div>
         </div>
-      ) : null}
+      ) : (
+        <div className='nav-mobile-cnt'>
+          <button className='nav-btn'>Features</button>
+          <button className='nav-btn'>Pricing</button>
+          <button className='nav-btn'>Resources</button>
+          <button className='nav-btn'>Resources</button>
+        </div>
+      )}
       <div className='nav-mobile-btn-cnt'>
-        <button>hi</button>
+        <button className='nav-mobile-btn'>{GoThreeBars}</button>
       </div>
     </div>
   );
