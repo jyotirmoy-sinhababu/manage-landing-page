@@ -1,0 +1,18 @@
+.page-intro-cnt {
+  display: flex;
+  padding-top: 42px;
+  justify-content: space-around;
+}
+
+.page-intro-first-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 300px;
+  height: 250px;
+}
+
+.intro-img {
+  width: 600px;
+  height: 500px;
+}

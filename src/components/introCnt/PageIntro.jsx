@@ -1,13 +1,15 @@
 import React from 'react';
 
+import './pageIntroStyle.css';
+
 import intro from '../../assests/img/illustration-intro.svg';
 
 import Btn from '../../sub-components/btn/Btn';
 
 const PageIntro = () => {
   return (
-    <div>
-      <div>
+    <div className='page-intro-cnt'>
+      <div className='page-intro-first-cnt'>
         <h1>Bring everyone together to build better products.</h1>
         <p>
           {' '}
@@ -16,7 +18,7 @@ const PageIntro = () => {
         </p>
         <Btn />
       </div>
-      <div>
+      <div className='page-intro-img-cnt'>
         <img className='intro-img' src={intro} alt='intro logo' />
       </div>
     </div>
