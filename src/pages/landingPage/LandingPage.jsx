@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './landingStyle.css';
+
 import Nav from '../../components/nav/Nav';
 import PageIntro from '../../components/introCnt/PageIntro';
 import PageCnt from '../../components/pageCnt/PageCnt';

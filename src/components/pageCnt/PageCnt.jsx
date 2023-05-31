@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './pageCntStyle.css';
+
 const PageCnt = () => {
   return (
-    <div>
-      <div>
+    <div className='pageCnt-main-cnt'>
+      <div className='pageCnt-first-cnt'>
         <h2>What’s different about Manage?</h2>
         <p>
           Manage provides all the functionality your team needs, without the
@@ -11,14 +13,16 @@ const PageCnt = () => {
           teams.{' '}
         </p>
       </div>
-      <div>
-        <div>
-          <div>
+      <div className='pageCnt-second-cnt'>
+        <div className='pageCnt-second-txtCnt'>
+          <div className='pageCnt-second-txt-numTxt'>
             <p>01</p>
           </div>
-          <div>
-            <p>Track company-wide progress</p>
-            <p>
+          <div className='pageCnt-second-txt-data'>
+            <p className='pageCnt-second-txt-paraOne'>
+              Track company-wide progress
+            </p>
+            <p className='pageCnt-second-txt-paraTwo'>
               {' '}
               See how your day-to-day tasks fit into the wider vision. Go from
               tracking progress at the milestone level all the way done to the
@@ -26,26 +30,30 @@ const PageCnt = () => {
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className='pageCnt-second-txtCnt'>
+          <div className='pageCnt-second-txt-numTxt'>
             <p>02</p>
           </div>
-          <div>
-            <p>Advanced built-in reports</p>
-            <p>
+          <div className='pageCnt-second-txt-data'>
+            <p className='pageCnt-second-txt-paraOne'>
+              Advanced built-in reports
+            </p>
+            <p className='pageCnt-second-txt-paraTwo'>
               Set internal delivery estimates and track progress toward company
               goals. Our customisable dashboard helps you build out the reports
               you need to keep key stakeholders informed.
             </p>
           </div>
         </div>
-        <div>
+        <div className='pageCnt-second-txtCnt'>
           <div>
-            <p>03</p>
+            <p className='pageCnt-second-txt-numTxt'>03</p>
           </div>
           <div>
-            <p>Everything you need in one place</p>
-            <p>
+            <p className='pageCnt-second-txt-paraOne'>
+              Everything you need in one place
+            </p>
+            <p className='pageCnt-second-txt-paraTwo'>
               Stop jumping from one service to another to communicate, store
               files, track tasks and share documents. Manage offers an
               all-in-one team productivity solution.
