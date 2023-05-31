@@ -20,7 +20,7 @@ const LandingPage = () => {
       <Nav />
       <PageIntro />
       <PageCnt />
-      <div>
+      <div className='landingPage-header-cnt'>
         <h1>What they've said</h1>
       </div>
       <div>

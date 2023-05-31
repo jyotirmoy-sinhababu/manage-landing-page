@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 29px;
+  padding-top: 25px;
   background-image: url(../../assests/img/bg-tablet-pattern.svg);
 }
 

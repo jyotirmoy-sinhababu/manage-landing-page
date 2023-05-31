@@ -35,7 +35,9 @@ const Nav = () => {
         </div>
       )}
       <div className='nav-mobile-btn-cnt'>
-        <button className='nav-mobile-btn'>{GoThreeBars}</button>
+        <button className='nav-mobile-btn'>
+          <GoThreeBars />
+        </button>
       </div>
     </div>
   );
