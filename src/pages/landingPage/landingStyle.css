@@ -4,3 +4,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.landing-card-cnt {
+  display: flex;
+  justify-content: space-around;
+}
+.landing-btn-cnt {
+  padding-top: 17px;
+  display: flex;
+  justify-content: space-around;
+}

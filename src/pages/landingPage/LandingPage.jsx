@@ -13,6 +13,7 @@ import anisha from '../../assests/img/avatar-anisha.png';
 import richard from '../../assests/img/avatar-richard.png';
 import shanai from '../../assests/img/avatar-shanai.png';
 import Footer from '../../components/footer/Footer';
+import LastComp from '../../components/lastComp/LastComp';
 
 const LandingPage = () => {
   return (
@@ -23,7 +24,7 @@ const LandingPage = () => {
       <div className='landingPage-header-cnt'>
         <h1>What they've said</h1>
       </div>
-      <div>
+      <div className='landing-card-cnt'>
         <Card
           img={ali}
           paraOne={'Ali Bravo'}
@@ -52,11 +53,12 @@ const LandingPage = () => {
             'Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.'
           }
         />
-        <div>
-          <Btn />
-        </div>
-        <Footer />
       </div>
+      <div className='landing-btn-cnt'>
+        <Btn />
+      </div>
+      <LastComp />
+      <Footer />
     </>
   );
 };
