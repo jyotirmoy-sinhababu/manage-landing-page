@@ -48,3 +48,25 @@
 .pageCnt-second-txt-paraTwo {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+@media screen and (max-width: 640px) {
+  .pageCnt-first-cnt {
+    padding-left: 15%;
+    width: 300px;
+    height: 250px;
+  }
+
+  .pageCnt-first-header,
+  .pageCnt-first-para,
+  .pageCnt-second-txt-numTxt,
+  .pageCnt-second-txt-paraOne,
+  .pageCnt-second-txt-paraTwo {
+    font-size: 16px;
+  }
+
+  .pageCnt-second-txtCnt {
+    display: flex;
+    width: 400px;
+    gap: 42px;
+  }
+}

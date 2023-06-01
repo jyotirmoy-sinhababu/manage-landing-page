@@ -34,3 +34,21 @@
   font-weight: 900;
   text-align: center;
 }
+
+@media screen and (max-width: 1050px) {
+  .card-cnt {
+    gap: 14px;
+    width: 240px;
+    height: 170px;
+  }
+  .img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .card-paraOne {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
