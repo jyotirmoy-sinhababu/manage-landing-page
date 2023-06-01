@@ -17,7 +17,7 @@ import LastComp from '../../components/lastComp/LastComp';
 
 const LandingPage = () => {
   return (
-    <>
+    <div className='landing-mainCnt'>
       <Nav />
       <PageIntro />
       <PageCnt />
@@ -59,7 +59,7 @@ const LandingPage = () => {
       </div>
       <LastComp />
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -39,4 +39,48 @@
   .nav-mobile-btn-cnt {
     display: flex;
   }
+
+  .nav-cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 10%;
+    position: relative;
+  }
+
+  .nav-mobile-cnt {
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 370px;
+    height: 340px;
+    border-radius: 9px;
+    background-color: aliceblue;
+  }
+
+  .navMo-btn {
+    border: none;
+    background-color: aliceblue;
+    font-size: 19px;
+    font-weight: 700;
+    height: 53px;
+    width: 180px;
+    border-radius: 70px;
+  }
+
+  .navMo-btn:hover {
+    background-color: orange;
+  }
+
+  .nav-mobile-btn {
+    border: none;
+    background-color: white;
+    font-size: 40px;
+  }
 }

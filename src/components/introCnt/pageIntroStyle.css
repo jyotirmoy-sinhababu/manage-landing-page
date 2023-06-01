@@ -27,3 +27,29 @@
 .page-intro-first-para {
   font-size: 18px;
 }
+@media screen and (max-width: 440px) {
+  .intro-img {
+    width: 400px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .page-intro-cnt {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 10%;
+    align-items: center;
+  }
+
+  .page-intro-first-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10%;
+    width: 400px;
+    height: 250px;
+  }
+}
