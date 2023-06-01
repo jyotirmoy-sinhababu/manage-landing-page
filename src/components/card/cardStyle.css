@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@0,400;1,200&display=swap');
+
 .card-cnt {
   margin-top: 60px;
   padding-top: 49px;
@@ -20,4 +22,15 @@
 .img {
   height: 80px;
   width: 80px;
+}
+
+.card-paraOne,
+.card-paraTwo {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.card-paraOne {
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './footerStyle.css';
+
 import Logo from '../../sub-components/logo/Logo';
 
 const Footer = () => {
@@ -24,28 +26,31 @@ const Footer = () => {
   };
 
   return (
-    <div>
-      <div>
-        <div>
+    <div className='footer-cnt'>
+      <div className='footer-1st-cnt'>
+        <div className='footer-logo-cnt'>
           <Logo />
         </div>
-        <div>
-          <p>created by JYOTIRMOY @FRONTED MENTOR CHALLENGES</p>
+        <div className='footer-created-by'>
+          <p className='footer-createdBy-txt'>
+            created by JYOTIRMOY @FRONTED MENTOR CHALLENGES
+          </p>
         </div>
       </div>
-      <div>
-        <button>Home</button>
-        <button>Pricing</button>
-        <button>Products</button>
-        <button> About Us</button>
+      <div className='footer-btn-cnt'>
+        <button className='footer-btn'>Home</button>
+        <button className='footer-btn'>Pricing</button>
+        <button className='footer-btn'>Products</button>
+        <button className='footer-btn'> About Us</button>
       </div>
-      <div>
-        <button>Careers</button>
-        <button>Community</button>
-        <button>Privacy Policy</button>
+      <div className='footer-btn-cnt'>
+        <button className='footer-btn'>Careers</button>
+        <button className='footer-btn'>Community</button>
+        <button className='footer-btn'>Privacy Policy</button>
       </div>
-      <div>
+      <div className='footer-frm-cnt'>
         <form
+          className='frm'
           onSubmit={(e) => {
             e.preventDefault();
             handleSubmit();
@@ -60,9 +65,17 @@ const Footer = () => {
             required
             placeholder='please enter your email'
           />
-          <button type='submit'>Go</button>
+          <button className='frm-btn' type='submit'>
+            Go
+          </button>
         </form>
-        <div>{!submittedData ? <p>{submittedData}</p> : <p>{err}</p>}</div>
+        <div className='footer-err-cnt'>
+          {!submittedData ? (
+            <p className='footer-err-txt'>{submittedData}</p>
+          ) : (
+            <p>{err}</p>
+          )}
+        </div>
       </div>
     </div>
   );
