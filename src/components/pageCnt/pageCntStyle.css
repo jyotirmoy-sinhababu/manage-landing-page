@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@0,400;1,200&display=swap');
+
 .pageCnt-main-cnt {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 25px;
+  padding-top: 15px;
   background-image: url(../../assests/img/bg-tablet-pattern.svg);
 }
 
@@ -37,4 +39,12 @@
   min-width: 45px;
   border-radius: 70px;
   color: white;
+}
+
+.pageCnt-first-header,
+.pageCnt-first-para,
+.pageCnt-second-txt-numTxt,
+.pageCnt-second-txt-paraOne,
+.pageCnt-second-txt-paraTwo {
+  font-family: 'Be Vietnam Pro', sans-serif;
 }

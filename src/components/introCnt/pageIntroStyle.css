@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@0,400;1,200&display=swap');
+
 .page-intro-cnt {
   display: flex;
   padding-top: 42px;
@@ -15,4 +17,13 @@
 .intro-img {
   width: 600px;
   height: 500px;
+}
+
+.page-intro-first-header,
+.page-intro-first-para {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.page-intro-first-para {
+  font-size: 18px;
 }

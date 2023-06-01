@@ -6,8 +6,8 @@ const PageCnt = () => {
   return (
     <div className='pageCnt-main-cnt'>
       <div className='pageCnt-first-cnt'>
-        <h2>What’s different about Manage?</h2>
-        <p>
+        <h2 className='pageCnt-first-header'>What’s different about Manage?</h2>
+        <p className='pageCnt-first-para'>
           Manage provides all the functionality your team needs, without the
           complexity. Our software is tailor-made for modern digital product
           teams.{' '}
@@ -16,7 +16,7 @@ const PageCnt = () => {
       <div className='pageCnt-second-cnt'>
         <div className='pageCnt-second-txtCnt'>
           <div className='pageCnt-second-txt-numTxt'>
-            <p>01</p>
+            <p className='pageCnt-second-txt-numTxt'>01</p>
           </div>
           <div className='pageCnt-second-txt-data'>
             <p className='pageCnt-second-txt-paraOne'>
@@ -32,7 +32,7 @@ const PageCnt = () => {
         </div>
         <div className='pageCnt-second-txtCnt'>
           <div className='pageCnt-second-txt-numTxt'>
-            <p>02</p>
+            <p className='pageCnt-second-txt-numTxt'>02</p>
           </div>
           <div className='pageCnt-second-txt-data'>
             <p className='pageCnt-second-txt-paraOne'>

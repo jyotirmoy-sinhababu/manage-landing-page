@@ -10,8 +10,10 @@ const PageIntro = () => {
   return (
     <div className='page-intro-cnt'>
       <div className='page-intro-first-cnt'>
-        <h1>Bring everyone together to build better products.</h1>
-        <p>
+        <h1 className='page-intro-first-header'>
+          Bring everyone together to build better products.
+        </h1>
+        <p className='page-intro-first-para'>
           {' '}
           Manage makes it simple for software teams to plan day-to-day tasks
           while keeping the larger team goals in view.
