@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 790px) {
   .page-intro-cnt {
     display: flex;
     flex-direction: column-reverse;

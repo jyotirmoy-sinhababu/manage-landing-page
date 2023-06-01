@@ -49,3 +49,22 @@
   cursor: pointer;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+  .footer-cnt {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 25px;
+    padding-left: 45px;
+    margin-left: 65px;
+  }
+
+  .frm {
+    display: flex;
+    gap: 3px;
+  }
+
+  .input-field {
+    width: 150px;
+  }
+}

@@ -15,5 +15,35 @@
   justify-content: space-around;
 }
 
-@media screen and (max-width: 440px) {
+.landing-cardMobile-cnt {
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+  .landing-card-cnt {
+    display: none;
+  }
+  .landing-cardMobile-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .landing-mobile-btn-cnt {
+    display: flex;
+    gap: 25px;
+  }
+
+  .landing-mobile-btn {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .landing-mobile-btn:hover {
+    background-color: orange;
+  }
 }
